@@ -1,0 +1,28 @@
+//definir o tipo de metodo q quero acessar (no caso, post)
+POST http://localhost:4002/products 
+content-type: application/json 
+
+{
+    "name": "lapis",
+    "price": 38
+}
+
+###
+
+GET http://localhost:4002/products
+
+###
+
+GET http://localhost:4002/products/1d5f5a42-8214-4308-b850-136091dce3a7
+
+###
+PUT http://localhost:4002/products/1f2216a1-b3f2-43d6-aee1-2bc4b1248fac
+content-type: application/json 
+
+{
+    "name": "material alterado",
+    "price": 34
+}
+
+###
+DELETE http://localhost:4002/products/7d119d2e-b0bb-4d32-8b25-698065eddabf
